@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Inter", serif, sans-serif;
+}
+
+:root {
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--Dark-grayish-blue);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+
+nav div a {
+    color: var(--Dark-grayish-blue);
+    margin-left: 40px;
+}
+
+nav div a:hover {
+    color: var(--Soft-orange);
+}
+
+nav img:last-of-type{
+    display: none;
+}
+
+.hero-content{
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pic-contain{
+    width: 68%;
+}
+
+.pic-contain img{
+    width: 100%;
+}
+
+.pic-contain img:last-of-type{
+    display: none;
+}
+
+.pic-text{
+    display: flex;
+    margin-top: 24px;
+    justify-content: space-between;
+    width: 28;
+}
+
+.pic-text h1{
+    font-size: 2.8rem;
+    font-weight: 800;
+    width: 280px;
+}
+
+.pic-text div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 47%;
+}
+
+.pic-text div button{
+    background-color: var(--Soft-red);
+    border: none;
+    color: var(--Off-white);
+    text-transform: uppercase;
+    width: 150px;
+    height: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.pic-text div button:hover{
+    background-color: var(--Very-dark-blue);
+
+}
+
+.text-container{
+    width: 28%;
+    padding: 20px;
+    background-color: var(--Very-dark-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-container div{
+    padding: 24px 0;
+
+}
+
+.text-container h1{
+    color: var(--Soft-orange);
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+
+.text-container h4:hover{
+    color: var(--Soft-orange);
+    cursor: pointer;
+}
+
+.text-container h4{
+    color: var(--Off-white);
+    margin: 14px 0;
+}
+
+
+
+.card-container{
+    display: flex;
+    padding: 24px;
+    margin-top: 24px;
+    justify-content: space-between; 
+}
+
+.inner-card div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inner-card{
+    display: flex;
+    gap: 15px;
+    width: 28%;
+}
+
+.inner-card img{
+    height: 120px;
+}
+
+@media(max-width:992px){
+
+.hero-content{
+    display: block;
+}
+.text-container{
+    width: 100%;
+    margin-top: 24px;
+}
+.pic-text h1{
+    font-size: 2.2rem;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.pic-text div{
+    width: 100%;
+}
+
+.pic-contain{
+    width: 100%;
+}
+.text-container h1{
+    font-size: 2.2rem;
+}
+
+.text-container div{
+    padding: 12px 0;
+}
+
+.text-container h4{
+    font-size: 1.2rem;
+}
+
+.pic-contain button{
+    width: 100%;
+    margin-top: 18px;
+}
+.card-container{
+    flex-wrap: wrap;
+}
+.inner-card{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+}
+
+@media (max-width: 576px) {
+
+nav div {
+    display: none;
+}
+
+nav img:last-of-type{
+    display: block;
+}
+
+.pic-text{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.pic-contain img:last-of-type{
+    display: block;
+}
+.pic-contain img:first-of-type{
+    display: none;
+}
+}
+
+@media(max-width:364px){
+    .inner-card img{
+        height: 130px;
+    }
+}
